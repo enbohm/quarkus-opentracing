@@ -11,7 +11,7 @@ Open up Jeager UI at http://127.0.0.1:16686 and NO spans/traces are visible even
 
 Now run the application with the following params
 
-```mvn compile quarkus:dev -Djvm.args="-DJAEGER_SAMPLER_TYPE=const -DJAEGER_SAMPLER_PARAM=1 -DJAEGER_ENDPOINT=http://localhost:14268/api/traces```
+```mvn compile quarkus:dev -Djvm.args="-DJAEGER_SAMPLER_TYPE=const -DJAEGER_SAMPLER_PARAM=1 -DJAEGER_ENDPOINT=http://localhost:14268/api/traces"```
 
 Now traces are visible in Jaeger UI with the service-name from application.properties BUT the other properties doesn't seem to be workig.
 
